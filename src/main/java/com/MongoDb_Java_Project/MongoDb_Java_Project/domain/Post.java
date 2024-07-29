@@ -1,7 +1,7 @@
 package com.MongoDb_Java_Project.MongoDb_Java_Project.domain;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
 import java.util.Objects;
 
 import org.springframework.data.annotation.Id;
@@ -20,9 +20,6 @@ public class Post implements Serializable {
 	private String body;
 	private AuthorDTO author;
 
-	public Post() {
-
-	}
 
 	public Post(String id, Date date, String title, String body,AuthorDTO author) {
 		super();
